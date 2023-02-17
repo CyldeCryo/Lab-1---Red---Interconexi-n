@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Documentacion de Grupo 8</title>
+		<link rel="stylesheet"  href="blogstyle.css" type="text/css">
+		
+	</head>
+
+
+	<header>	
+
+		<h1> Lab#1 - Red - Interconexión </h1>
+		<h2> Grupo 8: Luis Diaz Juan Pinto</h2>
+
+	</header>
+
+	<body>
+
+		
+		<h2> Desarollo </h2>
+
+		<p>Primero, se creó un sitio web en el servidor utilizando uno de los servidores de torre disponibles en Packet Tracer. Se utilizó el protocolo HTTP para permitir el uso de HTML en la creación del sitio web.Se configuró la dirección IP, la máscara de subred y el servidor DNS para el servidor web. El servidor DNS es importante para permitir que los otros servidores accedan al sitio web sin problemas.Para poder acceder al sitio web utilizando el nombre de dominio www.cisco.com, se creó un servidor DNS que asigna un nombre de dominio a la dirección IP del servidor web.Todos los servidores, incluido el servidor web y el servidor DNS, están conectados a un switch. El switch también está conectado a un servidor DHCP que se utiliza para asignar direcciones IP, máscaras de subred y servidores DNS a los dispositivos conectados.Todos los dispositivos, incluyendo los ordenadores de sobremesa y los portátiles, están conectados al switch a través de un punto de acceso inalámbrico que simula la red inalámbrica en la casa.Se configuró el servidor DHCP para que asigne direcciones IP a cada uno de los dispositivos conectados. También se asignaron los servidores DNS y las máscaras de subred a cada dispositivo.Finalmente, se probó la conexión a www.cisco.com desde cada uno de los dispositivos conectados para asegurarse de que todos pudieran acceder al sitio web sin problemas. </p>
+
+		
+
+		<h2> Arquitectura, protocolos, tipos de redes, y servicios</h2>
+		
+		<p> 
+En términos de arquitectura, esta solución se basa en una arquitectura cliente-servidor, en la que los dispositivos finales (clientes) solicitan información al servidor (en este caso, el sitio web de cisco.com). La topología de red recomendada sería una topología de red de estrella, en la que cada dispositivo final se conecta al router a través de una conexión punto a punto.En cuanto a los servicios y protocolos utilizados en esta solución, se utilizaría el protocolo TCP/IP para la comunicación de datos en la red. Además, el router proporcionaría servicios de red como DHCP (Dynamic Host Configuration Protocol), que se encarga de asignar direcciones IP a los dispositivos finales.
+
+
+El problema que encontramos en el desarrollo del sistema fue la configuración del hostname, que es el nombre identificador del servidor. Al no tener una configuración adecuada del hostname, los dispositivos no podían acceder al servidor de manera efectiva.Para solucionar este problema, implementamos un servidor DHCP (Dynamic Host Configuration Protocol), que asigna automáticamente una dirección IP y un servidor DNS a cada dispositivo conectado a la red. Esto asegura que cada dispositivo tenga una dirección IP única y un servidor DNS válido, lo que les permite comunicarse con el servidor de manera eficiente y efectiva. De esta manera, pudimos solucionar la problemática del hostname y garantizar la funcionalidad adecuada del sistema.
+
+
+se describió la estructura básica del sistema,también se mencionó la importancia del DNS server en la asignación de nombres de dominio a direcciones IP.En conclusion, en la creación de sistemas de red es común enfrentar problemas que impiden la comunicación efectiva entre los dispositivos. En estos casos, la implementación de soluciones efectivas y adecuadas, como el servidor DHCP en este caso, es esencial para garantizar la funcionalidad adecuada del sistema.
+
+</p>
+		
+		<h2> Refrencias></h2>
+		
+		<ul>
+			<li>Tech Acad. (2017, 22 agosto). 10.2.2.7 Packet Tracer - DNS and DHCP [Vídeo]. YouTube. https://www.youtube.com/watch?v=6fQJdXnxNz8</li>
+			<li>Cisco Learning Network. (s. f.). https://learningnetwork.cisco.com/s/</li>
+			<li>RemoteTrainingSolutions. (2015, 6 abril). Packet Tracer Lab 4 - Wireless, Connecting to the Internet, Web Servers and DNS [Vídeo]. YouTube. https://www.youtube.com/watch?v=i1az-1SfCkQ</li>
+			
+			
+		</ul>
+		
+
+	</body>
+
+</html>
